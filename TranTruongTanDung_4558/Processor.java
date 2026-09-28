@@ -1,4 +1,4 @@
-package GameTest;
+package TranTruongTanDung_4558;
 
 import java.util.Scanner;
 
@@ -28,8 +28,9 @@ public class Processor {
 			System.out.println("4. Find strongest/weakest character");
 			System.out.println("5. Count characters by type");
 			System.out.println("6. Search character by ID");
-			System.out.println("7. Dele1te character by ID");
+			System.out.println("7. Delete character by ID");
 			System.out.println("8. Calculate total team combat power");
+			System.out.println("9. Update Information");
 			System.out.println("0. Exit program");
 			System.out.println("----------------------------------------");
 			System.out.print("Please select a function (0-8): ");
@@ -38,6 +39,7 @@ public class Processor {
 				sc.nextLine();
 			} catch (Exception E) {
 				System.out.println("Wrong value - Input a number please");
+				choice = -1;
 				sc.nextLine();
 			}
 
@@ -75,6 +77,10 @@ public class Processor {
 			case 8:
 				System.out.printf("\n[TOTAL TEAM COMBAT POWER]: %.1f\n", manager.caculateTeamDameged());
 				break;
+			case 9:
+				System.out.println("Enter id to update: ");
+				String updId = sc.nextLine();
+				manager.updateInfo(updId);
 			case 0:
 				System.out.println("Exited the program. Goodbye!");
 				break;
