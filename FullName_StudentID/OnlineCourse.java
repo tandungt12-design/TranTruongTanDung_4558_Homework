@@ -12,6 +12,7 @@ public class OnlineCourse extends Course {
 	public void setPlatformName(String platformName) {
 		this.platformName = platformName;
 	}
+	//
 	public double getDiscountPercent() {
 		return discountPercent;
 	}

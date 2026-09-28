@@ -78,6 +78,7 @@ public class Processer {
 				courseList.addCourse(offline);
 				break;
 			case 2:
+				//
 				Course online = new OnlineCourse();
 				online.addCourse();
 				courseList.addCourse(online);

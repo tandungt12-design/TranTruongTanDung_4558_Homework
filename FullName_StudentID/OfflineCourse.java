@@ -15,6 +15,7 @@ public class OfflineCourse extends Course {
 	public double getMaterialFeePerStudent() {
 		return materialFeePerStudent;
 	}
+	//
 	public void setMaterialFeePerStudent(double materialFeePerStudent) {
 		this.materialFeePerStudent = materialFeePerStudent;
 	}
